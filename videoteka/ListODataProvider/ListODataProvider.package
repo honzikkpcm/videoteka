@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Package IsComponentLib="True">
+  <Identity value="ListODataProvider.f76d719154f1474893ef07b5a4994e65" />
+  <Version value="1.1.3" />
+  <Items>
+    <PackageItem Src="ListODataProvider.apiObjectManifest" />
+    <ResourceItem ResourceName="listODataProvider.js" Action="None" OutputFileName="listODataProvider.js" Src="listODataProvider.js" />
+  </Items>
+</Package>

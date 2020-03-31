@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<ProjectRoot>
+  <CreatedOn value="2020-03-18T08:47:43.8045482+01:00" />
+  <ProjectName value="Videoteka" />
+  <MainForm>
+    <ProjectMainFormOptions MaxPageWidth="700px" MinPageWidth="1170px" />
+  </MainForm>
+  <Options>
+    <ProjectOptions>
+      <ManageFolderContent value="False" />
+      <DataToForm>
+        <DataToFormConfiguration BoolEditor="Sf.LibraryOne.CheckBox" CollectionEditor="Repeater" ComputedText="Sf.LibraryOne.Label" DateEditor="Sf.LibraryOne.DatePicker" DateTimeEditor="Sf.LibraryOne.DatePicker" DecimalEditor="ScreenFactory.Data.Model.Ui.TextBox" EnumEditor="ScreenFactory.Data.Model.Ui.EnumCombo" IntegerEditor="ScreenFactory.Data.Model.Ui.TextBox" ReferenceEditor="Sf.LibraryOne.ReferenceCombo" StringEditor="ScreenFactory.Data.Model.Ui.TextBox" />
+      </DataToForm>
+      <Theme>
+        <ProjectTheme>
+          <ThemeName value="m8" />
+        </ProjectTheme>
+      </Theme>
+    </ProjectOptions>
+  </Options>
+  <PackageReferences>
+    <PackageReference Alias="CorePackage" IsComponentLib="True" IsReadOnly="True" IsSystem="True" Origin="system://CorePackage/CorePackage.package">
+      <ReferencedIdentity value="CorePackage.5f000000000045f00000000000000000" />
+      <ReferencedVersion value="0.0.0" />
+    </PackageReference>
+    <PackageReference Alias="main" Origin="main\main.package">
+      <ReferencedIdentity value="main.12db70fc55d74e279158da1d342e7e9f" />
+      <ReferencedVersion value="0.0.0" />
+    </PackageReference>
+    <PackageReference Alias="ServerConnection" IsComponentLib="True" Origin="..\..\Users\honza.stepan\Documents\Screen factory\Projects\New project2\ServerConnection\ServerConnection.package">
+      <ReferencedIdentity value="ServerConnection.db7b3eef075548988df768923691922c" />
+      <ReferencedVersion value="4.1.0" />
+    </PackageReference>
+    <PackageReference Alias="ListGrid2" IsComponentLib="True" Origin="ListGrid2\ListGrid2.package">
+      <ReferencedIdentity value="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb" />
+      <ReferencedVersion value="1.31.9" />
+    </PackageReference>
+    <PackageReference Alias="ListColumnSelector" IsComponentLib="True" Origin="ListColumnSelector\ListColumnSelector.package">
+      <ReferencedIdentity value="ListColumnSelector.2cbd6bf4e5dc483c88201c7083328f69" />
+      <ReferencedVersion value="1.0.3" />
+    </PackageReference>
+    <PackageReference Alias="List" IsComponentLib="True" Origin="List\List.package">
+      <ReferencedIdentity value="List.a6f439c3b8e944f383863f66ff1261c8" />
+      <ReferencedVersion value="4.2.9" />
+    </PackageReference>
+    <PackageReference Alias="ListCtrl" IsComponentLib="True" Origin="ListCtrl\ListCtrl.package">
+      <ReferencedIdentity value="ListCtrl.459ff3780ab145df985191cfc1336ce1" />
+      <ReferencedVersion value="2.15.0" />
+    </PackageReference>
+  </PackageReferences>
+</ProjectRoot>

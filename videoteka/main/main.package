@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Package>
+  <Identity value="main.12db70fc55d74e279158da1d342e7e9f" />
+  <Items>
+    <PackageItem Src="mainForm.form" />
+    <PackageItem Src="Movie.dataEntity" />
+    <PackageItem Src="globalApiObjects.globalApiObjects" />
+    <PackageItem Src="detailFrm.form" />
+    <PackageItem Src="globalVariables.globalVariables" />
+    <ResourceItem ResourceName="style.css" LinkerAction="Css" OutputFileName="style.css" Src="style.css" />
+  </Items>
+</Package>

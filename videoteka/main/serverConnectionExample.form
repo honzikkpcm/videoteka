@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Form>
+  <Name value="serverConnectionExample" />
+  <Caption value="Server connection example" />
+  <Content>
+    <Panel>
+      <Name value="panel1" />
+      <Orientation value="Vertical" />
+      <Panel.Height value="#" />
+      <Panel.Width value="*" />
+      <Children>
+        <Panel>
+          <Name value="panel4" />
+          <Orientation value="Horizontal" />
+          <Panel.Height value="#" />
+          <Panel.Width value="*" />
+          <Children>
+            <Button>
+              <Name value="button1" />
+              <Caption value="Load Categories" />
+              <Panel.Height value="#" />
+              <Panel.Width value="150px" />
+              <OnClick>
+                <ActionEvent ReferencedAction="~loadData" />
+              </OnClick>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-button" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Button>
+            <HyperLink>
+              <Name value="hyperLink1" />
+              <Data value="back" />
+              <Panel.Height value="#" />
+              <Panel.Width value="150px" />
+              <OnClick>
+                <ActionEvent ReferencedAction="+GlobalActions.goHome" />
+              </OnClick>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-hyperlink" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </HyperLink>
+          </Children>
+          <CssClass>
+            <CssClassConditional>
+              <ClassName value="{theme}-panel" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+          </CssClass>
+        </Panel>
+        <Panel>
+          <Name value="panel2" />
+          <Orientation value="Vertical" />
+          <Panel.Height value="#" />
+          <Panel.Width value="*" />
+          <Children>
+            <GroupBox>
+              <Name value="groupBox1" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Content>
+                <Repeater>
+                  <Name value="repeater1" />
+                  <Content>
+                    <Panel>
+                      <Name value="panel3" />
+                      <Orientation value="Horizontal" />
+                      <Children>
+                        <TextBox>
+                          <Name value="textBox2" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <Bindings>
+                            <Binding SourceProperty="Data" Expression="CategoryID" />
+                            <Binding SourceProperty="Caption" Expression="CategoryID.caption()" />
+                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="CategoryID.isRequired()" />
+                          </Bindings>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-textbox" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </TextBox>
+                        <TextBox>
+                          <Name value="textBox3" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <Bindings>
+                            <Binding SourceProperty="Data" Expression="CategoryName" />
+                            <Binding SourceProperty="Caption" Expression="CategoryName.caption()" />
+                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="CategoryName.isRequired()" />
+                          </Bindings>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-textbox" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </TextBox>
+                        <Button>
+                          <Name value="remove" />
+                          <Caption value="Remove" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~handler_remove_OnClick" />
+                          </OnClick>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-button" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Button>
+                      </Children>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                  </Content>
+                  <Bindings>
+                    <Binding SourceProperty="DataItems" Expression="result.value" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-repeater" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Repeater>
+              </Content>
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="result.value.caption()" />
+              </Bindings>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-groupbox" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </GroupBox>
+            <TextBox>
+              <Name value="textBox11" />
+              <IsEnabled value="False" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Bindings>
+                <Binding SourceProperty="Data" Expression="statusCode" />
+                <Binding SourceProperty="IsRequiredMarkVisible" Expression="statusCode.isRequired()" />
+                <Binding SourceProperty="Caption" Expression="statusCode.caption()" />
+              </Bindings>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-textbox" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </TextBox>
+          </Children>
+          <CssClass>
+            <CssClassConditional>
+              <ClassName value="{theme}-panel" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+          </CssClass>
+        </Panel>
+        <Panel>
+          <Name value="panel5" />
+          <Orientation value="Vertical" />
+          <Panel.Height value="#" />
+          <Panel.Width value="*" />
+          <Children>
+            <Label>
+              <Name value="label2" />
+              <Data value="RootUrl is usually configured after deployment. For using this API object you don't need to know it as it will be automatically prepended to url. But if you need to know it for example to construct some hyperlink url, you may use method getRootUrl" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-label" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Label>
+            <Panel>
+              <Name value="panel10" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <Button>
+                  <Name value="btnGetRootUrl" />
+                  <Caption value="getRootUrl" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <OnClick>
+                    <ActionEvent ReferencedAction="~handler_button3_OnClick" />
+                  </OnClick>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-button" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Button>
+                <TextBox>
+                  <Name value="textBox13" />
+                  <CaptionPosition value="Hide" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="form.getRootUrlResult" />
+                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.getRootUrlResult.isRequired()" />
+                    <Binding SourceProperty="Caption" Expression="form.getRootUrlResult.caption()" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="panel6" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <TextBox>
+                  <Name value="textBox4" />
+                  <Caption value="Version" />
+                  <CaptionPosition value="Top" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="version" />
+                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="version.isRequired()" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <TextBox>
+                  <Name value="textBox5" />
+                  <CaptionPosition value="Top" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="language" />
+                    <Binding SourceProperty="Caption" Expression="language.caption()" />
+                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="language.isRequired()" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <TextBox>
+                  <Name value="textBox7" />
+                  <CaptionPosition value="Top" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="customHeaderName" />
+                    <Binding SourceProperty="Caption" Expression="customHeaderName.caption()" />
+                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="customHeaderName.isRequired()" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <TextBox>
+                  <Name value="textBox8" />
+                  <CaptionPosition value="Top" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="customHeaderValue" />
+                    <Binding SourceProperty="Caption" Expression="customHeaderValue.caption()" />
+                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="customHeaderValue.isRequired()" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Button>
+              <Name value="button4" />
+              <Caption value="Set connection headers" />
+              <Panel.Height value="#" />
+              <Panel.Width value="250px" />
+              <OnClick>
+                <ActionEvent ReferencedAction="~setHeaders" />
+              </OnClick>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-button" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Button>
+            <TextBox>
+              <Name value="textBox6" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Bindings>
+                <Binding SourceProperty="Data" Expression="dataToPost.hello" />
+                <Binding SourceProperty="Caption" Expression="dataToPost.hello.caption()" />
+                <Binding SourceProperty="IsRequiredMarkVisible" Expression="dataToPost.hello.isRequired()" />
+              </Bindings>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-textbox" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </TextBox>
+            <Button>
+              <Name value="button2" />
+              <Caption value="Post to https://httpbin.org/" />
+              <Panel.Height value="#" />
+              <Panel.Width value="250px" />
+              <OnClick>
+                <ActionEvent ReferencedAction="~postToBin" />
+              </OnClick>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-button" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Button>
+            <TextBox>
+              <Name value="textBox9" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Bindings>
+                <Binding SourceProperty="Data" Expression="ContentType" />
+                <Binding SourceProperty="IsRequiredMarkVisible" Expression="ContentType.isRequired()" />
+                <Binding SourceProperty="Caption" Expression="ContentType.caption()" />
+              </Bindings>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-textbox" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </TextBox>
+            <TextBox>
+              <Name value="textBox1" />
+              <Caption value="Server response" />
+              <InputType value="Multiline" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Rows value="20" />
+              <Bindings>
+                <Binding SourceProperty="Data" Expression="postResult" />
+                <Binding SourceProperty="IsRequiredMarkVisible" Expression="postResult.isRequired()" />
+              </Bindings>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-textbox" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </TextBox>
+          </Children>
+          <CssClass>
+            <CssClassConditional>
+              <ClassName value="{theme}-panel" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+          </CssClass>
+        </Panel>
+      </Children>
+      <CssClass>
+        <CssClassConditional>
+          <ClassName value="{theme}-panel" />
+          <IsThemedStyle value="True" />
+        </CssClassConditional>
+      </CssClass>
+    </Panel>
+  </Content>
+  <DataContext>
+    <DataContext>
+      <Children>
+        <Complex>
+          <Name value="result" />
+          <Caption value="Result" />
+          <Children>
+            <Collection>
+              <Name value="value" />
+              <Caption value="Northwind Categories" />
+              <Children>
+                <Attribute>
+                  <Name value="CategoryID" />
+                  <Caption value="Category ID" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="CategoryName" />
+                  <Caption value="Category name" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Collection>
+          </Children>
+        </Complex>
+        <Attribute>
+          <Name value="version" />
+          <Caption value="Version" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="language" />
+          <Caption value="Language" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="ContentType" />
+          <Caption value="ContentType response header" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="postResult" />
+          <Caption value="Post result" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Complex>
+          <Name value="dataToPost" />
+          <Caption value="Data to post" />
+          <Children>
+            <Attribute>
+              <Name value="hello" />
+              <Caption value="Hello" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Complex>
+        <Attribute>
+          <Name value="customHeaderName" />
+          <Caption value="Custom header name" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="customHeaderValue" />
+          <Caption value="Custom header value" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="serverCSRFResponse" />
+          <Caption value="Server CSRF response" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="statusCode" />
+          <Caption value="Status code" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="csrfToken" />
+          <Caption value="Csrf token" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="getRootUrlResult" />
+          <Caption value="Get root url result" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+      </Children>
+    </DataContext>
+  </DataContext>
+  <OnCreate>
+    <ActionEvent ReferencedAction="~init" />
+  </OnCreate>
+  <Actions>
+    <ActionBlock>
+      <Name value="loadData" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var response = apiobjects.northwind.getAsync("Categories?$select=CategoryID,CategoryName")
+
+if (response.isError()) then
+	system.consoleError(response.getErrorMessage())
+	form.statusCode = ToString(response.getStatusCode())
+else 
+	form.result.fromJson(response.getJsonString())
+	form.statusCode = ToString(response.getStatusCode())
+	
+	// if we want to use only part of the message, we can use extractJson
+	system.console("Second item: " + response.extractJson("value[2]"))
+endif]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+      <Tests>
+        <ActionTest>
+          <Name value="correctResponse" />
+          <IsJavascript value="True" />
+          <Javascript><![CDATA[var responseMock = {
+    isError: function() {
+        responseMock.isErrorCalls.push(arguments);
+        return false;
+    },
+    getJsonString: function() {
+        responseMock.getJsonStringCalls.push(arguments);
+        return `{"mock": true}`;
+    },
+    getStatusCode: function() {
+    	return 200;
+    },
+    isErrorCalls: [],
+    getJsonStringCalls: []
+};
+
+var serverConnMock = {
+    getAsync: function() {
+        serverConnMock.getAsyncCalls.push(arguments);
+        return responseMock;
+    },
+    getAsyncCalls: []
+}
+
+$datacontext.$globals.$api.main_northwind = serverConnMock;
+
+return $datacontext.$actions.loadData(data, event)
+    .then(() => {
+        assert.equal(serverConnMock.getAsyncCalls.length, 1);
+        assert.equal(serverConnMock.getAsyncCalls[0][0].url,
+            'Categories?$select=CategoryID,CategoryName');
+        assert.equal(responseMock.isErrorCalls.length, 1);
+        assert.equal(responseMock.getJsonStringCalls.length, 1);
+    })]]></Javascript>
+          <ActionLangBody IsValid="True" />
+        </ActionTest>
+        <ActionTest>
+          <Name value="errorResponse" />
+          <IsJavascript value="True" />
+          <Javascript><![CDATA[var responseMock = {
+    isError: function() {
+        responseMock.isErrorCalls.push(arguments);
+        return true;
+    },
+    getJsonString: function() {
+        throw new Error('This should not be called in this scenario');
+    },
+    getErrorMessage: function() {
+        responseMock.getErrorMessageCalls.push(arguments);
+        return 'server is broken';
+    },
+    getStatusCode: function() {
+    	return 500;
+    },    
+    isErrorCalls: [],
+    getJsonStringCalls: [],
+    getErrorMessageCalls: []
+};
+
+var serverConnMock = {
+    getAsync: function() {
+        serverConnMock.getAsyncCalls.push(arguments);
+        return responseMock;
+    },
+    getAsyncCalls: []
+}
+
+var corePachageMock = {
+    consoleError: function() {
+        corePachageMock.consoleErrorCalls.push(arguments);
+    },
+    consoleErrorCalls: []
+};
+
+
+$datacontext.$globals.$api.main_northwind = serverConnMock;
+$datacontext.$globals.$api.CorePackage_system = corePachageMock;
+
+return $datacontext.$actions.loadData(data, event)
+    .then(() => {
+        assert.equal(serverConnMock.getAsyncCalls.length, 1);
+        assert.equal(serverConnMock.getAsyncCalls[0][0].url,
+            'Categories?$select=CategoryID,CategoryName');
+        assert.equal(responseMock.isErrorCalls.length, 1);
+        assert.equal(responseMock.getJsonStringCalls.length, 0);
+        assert.equal(responseMock.getErrorMessageCalls.length, 1);
+    })]]></Javascript>
+          <ActionLangBody IsValid="True" />
+        </ActionTest>
+      </Tests>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="setHeaders" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[// nastavením hodnoty na "" by se hlavička smazala
+
+// server očekává language uppercase, methoda setLanguage proto udělá uppercase automaticky
+form.apiobjects.httpBin.setLanguage(form.language)
+
+form.apiobjects.httpBin.setVersion(form.version)
+
+form.apiobjects.httpBin.setHeader(form.customHeaderName, form.customHeaderValue)]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="init" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.version = "1.2.3"
+form.language = "en"
+form.dataToPost.hello = "world"
+form.customHeaderName = "X-Custom"
+form.customHeaderValue = "Abcd"
+
+// form.actions.memoryCheck()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="postToBin" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var messageJson = form.dataToPost.toJson()
+
+// url bude http://httpbin.org/post
+var response = form.apiobjects.httpBin.postAsync("post", messageJson)
+
+if (response.isError()) then
+	system.consoleError(response.getErrorMessage())
+else 
+	form.postResult = response.getJsonString()
+	form.ContentType = response.getHeader("Content-Type")
+endif
+
+// jakmile bude server podporovat hlavičku X-MessageType, lze rozlišit
+// odpověd i pomocí metody getMessageType (např. očekáváme-li 906)
+// system.console("MessageType: " + response.getMessageType())]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_remove_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[params.data.removeMe()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+      <Tests>
+        <ActionTest>
+          <Name value="test1" />
+          <ActionLangBody IsValid="True">
+            <Script><![CDATA[/* Arrange */
+var item = form.result.value.addItem()
+item.CategoryID = "a"
+item.CategoryName = "AA"
+
+item = form.result.value.addItem()
+item.CategoryID = "b"
+item.CategoryName = "BB"
+
+item = form.result.value.addItem()
+item.CategoryID = "c"
+item.CategoryName = "CC"
+
+/* Act */
+item = form.result.value.selectFirst(current.CategoryID = "a")
+callTestedAction(item)
+
+/* Assert */
+assert.equal(form.result.value.count(), 2)
+assert.equal(form.result.value.selectFirst().CategoryID, "b")]]></Script>
+          </ActionLangBody>
+        </ActionTest>
+      </Tests>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_button3_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.getRootUrlResult = apiobjects.northwind.getRootUrl()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+  </Actions>
+  <ApiObjects>
+    <ServerConnection identity="ServerConnection.db7b3eef075548988df768923691922c">
+      <Name value="httpBin" />
+      <codelistsUrl value="" />
+      <listsUrl value="" />
+      <rootUrl value="https://httpbin.org/" />
+    </ServerConnection>
+  </ApiObjects>
+</Form>

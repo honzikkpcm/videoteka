@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<DataEntity>
+  <Name value="Movie" />
+  <Caption value="Movie" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData />
+  </PropertyLocalizationData.PropertyLocalizations>
+  <Children>
+    <Attribute>
+      <Name value="mID" />
+      <Caption value="M ID" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Integer" />
+        </AttributeType>
+      </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData />
+      </PropertyLocalizationData.PropertyLocalizations>
+    </Attribute>
+    <Attribute>
+      <Name value="mName" />
+      <Caption value="M name" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData />
+      </PropertyLocalizationData.PropertyLocalizations>
+    </Attribute>
+    <Attribute>
+      <Name value="mType" />
+      <Caption value="M type" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData />
+      </PropertyLocalizationData.PropertyLocalizations>
+    </Attribute>
+    <Attribute>
+      <Name value="mYearOfRelease" />
+      <Caption value="M year of release" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Integer" />
+        </AttributeType>
+      </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData />
+      </PropertyLocalizationData.PropertyLocalizations>
+    </Attribute>
+    <Attribute>
+      <Name value="mStarring" />
+      <Caption value="M starring" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData />
+      </PropertyLocalizationData.PropertyLocalizations>
+    </Attribute>
+    <Attribute>
+      <Name value="mRating" />
+      <Caption value="M rating" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData />
+      </PropertyLocalizationData.PropertyLocalizations>
+    </Attribute>
+    <Attribute>
+      <Name value="mSeenItWhole" />
+      <Caption value="M seen it whole" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData />
+      </PropertyLocalizationData.PropertyLocalizations>
+    </Attribute>
+  </Children>
+</DataEntity>

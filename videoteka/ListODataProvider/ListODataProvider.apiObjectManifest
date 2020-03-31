@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<ApiObjectManifest>
+  <Name value="ListODataProvider" />
+  <Generator value="listODataProvider.js" />
+  <Contracts>
+    <ImplementsContractManifest>
+      <Name value="IListDataProvider" />
+    </ImplementsContractManifest>
+  </Contracts>
+  <Methods>
+    <MethodManifest>
+      <Name value="LoadData" />
+      <ReturnType />
+    </MethodManifest>
+    <MethodManifest>
+      <Name value="SetCurrentPageAt" />
+      <ReturnType />
+      <Parameters>
+        <ParameterManifest>
+          <Name value="newPage" />
+          <BaseType value="Integer" />
+        </ParameterManifest>
+      </Parameters>
+    </MethodManifest>
+    <MethodManifest>
+      <Name value="SetDatasetColumns" />
+      <ReturnType />
+      <Parameters>
+        <ParameterManifest>
+          <Name value="columnName" />
+          <BaseType value="String" />
+        </ParameterManifest>
+      </Parameters>
+    </MethodManifest>
+    <MethodManifest>
+      <Name value="SetGroupBy" />
+      <ReturnType />
+      <Parameters>
+        <ParameterManifest>
+          <Name value="orderBy" />
+          <BaseType value="String" />
+        </ParameterManifest>
+        <ParameterManifest>
+          <Name value="descending" />
+          <BaseType value="Bool" />
+        </ParameterManifest>
+      </Parameters>
+    </MethodManifest>
+    <MethodManifest>
+      <Name value="SetPageSize" />
+      <ReturnType />
+      <Parameters>
+        <ParameterManifest>
+          <Name value="newPageSize" />
+          <BaseType value="Integer" />
+        </ParameterManifest>
+      </Parameters>
+    </MethodManifest>
+    <MethodManifest>
+      <Name value="SetPage" />
+      <ReturnType />
+      <Parameters>
+        <ParameterManifest>
+          <Name value="page" />
+          <BaseType value="Integer" />
+        </ParameterManifest>
+      </Parameters>
+    </MethodManifest>
+  </Methods>
+  <Properties>
+    <PropertyManifest>
+      <Name value="server" />
+      <Type value="ApiObject" />
+      <UiEditor value="contract/IServerConnection" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="datasetName" />
+      <Bindable value="True" />
+      <IsRequired value="True" />
+      <Type value="string" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="dataCollectionReference" />
+      <IsRequired value="True" />
+      <Type value="string" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="recordsCountReference" />
+      <IsRequired value="True" />
+      <Type value="string" />
+    </PropertyManifest>
+  </Properties>
+</ApiObjectManifest>

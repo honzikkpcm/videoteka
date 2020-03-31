@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<GlobalApiObjects>
+  <Name value="globalApiObjects" />
+  <ApiObjects>
+    <ServerConnection identity="ServerConnection.db7b3eef075548988df768923691922c">
+      <Name value="videoteka" />
+    </ServerConnection>
+    <ListCtrl identity="ListCtrl.459ff3780ab145df985191cfc1336ce1">
+      <Name value="listCtrl" />
+      <server reference="~videoteka" />
+    </ListCtrl>
+  </ApiObjects>
+</GlobalApiObjects>

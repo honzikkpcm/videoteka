@@ -1,0 +1,35 @@
+/* DEFAULT CLASSES */
+.inline{
+	display:inline;
+}
+.hidden{
+	display:none;
+}
+.centered{
+	text-align: center;
+}
+.no-header th{
+	display:none !important;
+}
+
+/* CUSTOM SETTINGS FOR CLASSES */
+.inline-table tr{
+	background-color: transparent !important;
+}
+.inline-table *{
+	display: inline !important;
+	padding: 0 !important;
+}
+.inline-table table{
+	display: table !important;
+}
+.inline-table td{
+	background-color: transparent;
+	border: 0 !important;
+}
+.inline-table td:after{
+	content: ", ";
+}
+.inline-table tr:last-child td:after{
+	content: "";
+}
