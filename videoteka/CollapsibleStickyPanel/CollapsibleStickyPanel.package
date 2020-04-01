@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Package IsComponentLib="True">
+  <Identity value="CollapsibleStickyPanel.4b45f89dd6ca43ecb980574e5dacae09" />
+  <Version value="1.1.4" />
+  <Items>
+    <ResourceItem ResourceName="CollapsibleStickyPanel.png" Action="None" OutputFileName="CollapsibleStickyPanel.png" Src="CollapsibleStickyPanel.png" />
+    <PackageItem Src="CollapsibleStickyPanel.componentManifest" />
+    <ResourceItem ResourceName="collapsibleStickyPanel.js" LinkerAction="Script" OutputFileName="collapsibleStickyPanel.js" Src="collapsibleStickyPanel.js" />
+    <ResourceItem ResourceName="collapsibleStickyPanel.css" LinkerAction="Css" OutputFileName="collapsibleStickyPanel.css" Src="collapsibleStickyPanel.css" />
+  </Items>
+</Package>

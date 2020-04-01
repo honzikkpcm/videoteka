@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<ComponentManifest>
+  <Name value="CollapsibleStickyPanel" />
+  <Generator value="&lt;sffw-collapsible-sticky-panel&gt;" />
+  <Type value="ContentObject" />
+  <UiCaption value="Collapsible Sticky Panel" />
+  <UiCategory value="SFFW" />
+  <UiIcon value="CollapsibleStickyPanel.png" />
+  <Events>
+    <EventManifest>
+      <Name value="OnCollapseClick" />
+      <Parameters>
+        <EventParameterManifest>
+          <Name value="data" />
+        </EventParameterManifest>
+      </Parameters>
+    </EventManifest>
+  </Events>
+  <Properties>
+    <PropertyManifest>
+      <Name value="caption" />
+      <Bindable value="OneWay" />
+      <Type value="string" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="isExpanded" />
+      <Bindable value="Always" />
+      <Type value="bool" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="isVisible" />
+      <Bindable value="True" />
+      <Type value="bool" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="collapsedIconClass" />
+      <Type value="string" />
+      <UiCategory value="Appearance" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="nonCollapsedIconClass" />
+      <Type value="string" />
+      <UiCategory value="Appearance" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="cssClass" />
+      <Default value="sffw-csp csp-default" />
+      <Type value="string" />
+      <UiCategory value="Appearance" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="animate" />
+      <Default value="false" />
+      <Type value="bool" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="animateDuration" />
+      <Default value="600" />
+      <Type value="integer" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="markerText" />
+      <Bindable value="OneWay" />
+      <Type value="string" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="markerCss" />
+      <Bindable value="OneWay" />
+      <Type value="string" />
+    </PropertyManifest>
+  </Properties>
+</ComponentManifest>

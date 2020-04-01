@@ -1,0 +1,78 @@
+.sffw-csp {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.sffw-csp > ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sffw-csp > ul > li {
+    cursor: pointer;
+}
+
+.sffw-csp > ul > li > a {
+    text-decoration: none;
+    word-wrap: break-word;
+    display: block;
+}
+
+.sffw-csp > div {
+    overflow: visible;
+}
+
+.csp-default > ul {
+    width: 10%;
+}
+
+.csp-default > ul > li {
+    background-color: lightgray;
+    margin-right: 1px;
+    line-height: 1.5rem;
+}
+
+.csp-default > ul > li > a {
+    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue Light", "HelveticaNeue-Light", sans-serif;
+    font-size: 0.8rem;
+    color: initial;
+    padding: 0.5rem;
+}
+
+.csp-default > ul > li > a > span:nth-of-type(2){
+    float: right;
+    padding-top: 0.3rem;
+}
+
+.csp-default > ul > li:hover {
+    background-color: lightgray;
+}
+
+.csp-default .sffw-csp-marker-text, .csp-default .sffw-csp-marker {
+	float: right;
+	margin-right: 10px;
+	width: 28px;
+	height: 28px;
+	background-color: white;
+	color: #00205b;
+	padding-top: 2px;
+	border-radius: 30px;
+	text-align: center;
+	z-index: 0;
+}
+
+.csp-default .sffw-csp-marker-exclamation-mark:after {
+    content: "\f12a";
+    font-family: FontAwesome;
+}
+
+/* hack for Mac Safari */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+    .sffw-csp {
+        position: -webkit-sticky;
+    }
+}}

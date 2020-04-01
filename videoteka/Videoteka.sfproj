@@ -8,6 +8,7 @@
   </MainForm>
   <Options>
     <ProjectOptions>
+      <LocalizationEnabled value="True" />
       <ManageFolderContent value="False" />
       <DataToForm>
         <DataToFormConfiguration BoolEditor="Sf.LibraryOne.CheckBox" CollectionEditor="Repeater" ComputedText="Sf.LibraryOne.Label" DateEditor="Sf.LibraryOne.DatePicker" DateTimeEditor="Sf.LibraryOne.DatePicker" DecimalEditor="ScreenFactory.Data.Model.Ui.TextBox" EnumEditor="ScreenFactory.Data.Model.Ui.EnumCombo" IntegerEditor="ScreenFactory.Data.Model.Ui.TextBox" ReferenceEditor="Sf.LibraryOne.ReferenceCombo" StringEditor="ScreenFactory.Data.Model.Ui.TextBox" />
@@ -59,6 +60,10 @@
     <PackageReference Alias="ServerConnection" IsComponentLib="True" Origin="ServerConnection\ServerConnection.package">
       <ReferencedIdentity value="ServerConnection.db7b3eef075548988df768923691922c" />
       <ReferencedVersion value="4.1.0" />
+    </PackageReference>
+    <PackageReference Alias="CollapsibleStickyPanel" IsComponentLib="True" Origin="CollapsibleStickyPanel\CollapsibleStickyPanel.package">
+      <ReferencedIdentity value="CollapsibleStickyPanel.4b45f89dd6ca43ecb980574e5dacae09" />
+      <ReferencedVersion value="1.1.4" />
     </PackageReference>
   </PackageReferences>
 </ProjectRoot>

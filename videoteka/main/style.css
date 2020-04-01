@@ -11,6 +11,12 @@
 .no-header th{
 	display:none !important;
 }
+.white-bg-sticky{
+	left: 0;
+}
+.white-bg-sticky .container{
+	background: #fff !important;
+}
 
 /* CUSTOM SETTINGS FOR CLASSES */
 .inline-table tr{
