@@ -19,7 +19,7 @@
         <UIElement xsi:type="Track" UniqueId="c21a1b4d-a008-4818-801c-f274804223d2" />
       </UIElement>
       <UIElement xsi:type="ToolWindowContainer" AutoHideSize="220,200" DockedSize="220,200" DocumentSize="220,200" FloatingSize="220,200" Size="220,200" />
-      <UIElement xsi:type="ToolWindowContainer" AutoHideSize="300,726.8" DockedSize="242.4,580.2" DocumentSize="300,726.8" FloatingSize="300,726.8" Size="242.4,580.2" SelectedWindowUniqueId="949ada99-6ec8-45e1-8191-46b767a34521">
+      <UIElement xsi:type="ToolWindowContainer" AutoHideSize="300,726.8" DockedSize="242.4,580.2" DocumentSize="300,726.8" FloatingSize="300,726.8" Size="242.4,580.2" SelectedWindowUniqueId="1ec773d6-147e-4b6b-ba0e-0e8286b93d57">
         <UIElement xsi:type="ToolWindowRef" UniqueId="1ec773d6-147e-4b6b-ba0e-0e8286b93d57" />
         <UIElement xsi:type="ToolWindowRef" UniqueId="949ada99-6ec8-45e1-8191-46b767a34521" />
       </UIElement>
@@ -64,14 +64,10 @@
     <DocumentWindow UniqueId="cb547578-3761-4b4a-a956-d4c56c2e8959" AutoHideSize="764.8,726.8" DockedSize="764.8,726.8" DocumentSize="954.4,580.2" FloatingSize="764.8,726.8" Size="954.4,580.2" IsOpen="true" LastState="Document" StandardMdiBounds="0,0,300,200" State="Document">
       <Tag xsi:type="LayoutData" ToolType="ScreenFactory.Client.FormDesigner.FormDocumentEditor" ObjectId="/!main.12db70fc55d74e279158da1d342e7e9f/#UiParts[0]/mainForm">
         <Data>
-          <State Split="*">
+          <State Split="0">
             <ToolsStates>
               <State Tool="ScreenFactory.Client.ApiObjectsDesigner.ApiObjectsTool">
-                <State DefaultExpanded="true">
-                  <SelectedPaths>
-                    <Item>form API objects (mainForm)/list</Item>
-                  </SelectedPaths>
-                </State>
+                <State DefaultExpanded="true" />
               </State>
               <State Tool="ScreenFactory.Client.Designers.ActionsDesigner.ActionsTool">
                 <State DefaultExpanded="true" />
@@ -82,7 +78,6 @@
                     <SavedPathStates>
                       <Item>Form variables</Item>
                       <Item>Global variables</Item>
-                      <Item>Form variables/list</Item>
                     </SavedPathStates>
                   </State>
                   <Headers>
@@ -148,7 +143,11 @@
                 <State DefaultExpanded="true" />
               </State>
               <State Tool="ScreenFactory.Client.Designers.ActionsDesigner.ActionsTool">
-                <State DefaultExpanded="true" />
+                <State DefaultExpanded="true">
+                  <SelectedPaths>
+                    <Item>/form actions (mainForm)/LoadMovies</Item>
+                  </SelectedPaths>
+                </State>
               </State>
               <State Tool="ScreenFactory.Client.DataContextDesigner.VariablesTool">
                 <Variables>

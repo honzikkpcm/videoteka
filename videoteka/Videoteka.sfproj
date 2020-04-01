@@ -28,10 +28,6 @@
       <ReferencedIdentity value="main.12db70fc55d74e279158da1d342e7e9f" />
       <ReferencedVersion value="0.0.0" />
     </PackageReference>
-    <PackageReference Alias="ServerConnection" IsComponentLib="True" Origin="..\..\Users\honza.stepan\Documents\Screen factory\Projects\New project2\ServerConnection\ServerConnection.package">
-      <ReferencedIdentity value="ServerConnection.db7b3eef075548988df768923691922c" />
-      <ReferencedVersion value="4.1.0" />
-    </PackageReference>
     <PackageReference Alias="ListGrid2" IsComponentLib="True" Origin="ListGrid2\ListGrid2.package">
       <ReferencedIdentity value="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb" />
       <ReferencedVersion value="1.31.9" />
@@ -59,6 +55,10 @@
     <PackageReference Alias="jQueryPackage" IsComponentLib="True" Origin="jQueryPackage\jQueryPackage.package">
       <ReferencedIdentity value="jQueryPackage.969dfbfe76454b4187e210594a2a988b" />
       <ReferencedVersion value="0.0.0" />
+    </PackageReference>
+    <PackageReference Alias="ServerConnection" IsComponentLib="True" Origin="ServerConnection\ServerConnection.package">
+      <ReferencedIdentity value="ServerConnection.db7b3eef075548988df768923691922c" />
+      <ReferencedVersion value="4.1.0" />
     </PackageReference>
   </PackageReferences>
 </ProjectRoot>
