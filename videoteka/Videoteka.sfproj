@@ -2,6 +2,7 @@
 <?data-format version="0.400"?>
 <ProjectRoot>
   <CreatedOn value="2020-03-18T08:47:43.8045482+01:00" />
+  <Language value="cs" />
   <ProjectName value="Videoteka" />
   <MainForm>
     <ProjectMainFormOptions MaxPageWidth="700px" MinPageWidth="1170px" />
@@ -20,6 +21,10 @@
       </Theme>
     </ProjectOptions>
   </Options>
+  <Languages>
+    <ProjectLanguageItem Language="en" />
+    <ProjectLanguageItem Language="cs" />
+  </Languages>
   <PackageReferences>
     <PackageReference Alias="CorePackage" IsComponentLib="True" IsReadOnly="True" IsSystem="True" Origin="system://CorePackage/CorePackage.package">
       <ReferencedIdentity value="CorePackage.5f000000000045f00000000000000000" />
@@ -64,6 +69,14 @@
     <PackageReference Alias="CollapsibleStickyPanel" IsComponentLib="True" Origin="CollapsibleStickyPanel\CollapsibleStickyPanel.package">
       <ReferencedIdentity value="CollapsibleStickyPanel.4b45f89dd6ca43ecb980574e5dacae09" />
       <ReferencedVersion value="1.1.4" />
+    </PackageReference>
+    <PackageReference Alias="FontAwesome" IsComponentLib="True" Origin="FontAwesome\FontAwesome.package">
+      <ReferencedIdentity value="FontAwesome.066b7c6e13eb4981b99803c8b3a51aae" />
+      <ReferencedVersion value="0.1.0" />
+    </PackageReference>
+    <PackageReference Alias="DeclListQuery" IsComponentLib="True" Origin="DeclListQuery\DeclListQuery.package">
+      <ReferencedIdentity value="DeclListQuery.f41d2c211a8f43618588763e63b56065" />
+      <ReferencedVersion value="1.0.3" />
     </PackageReference>
   </PackageReferences>
 </ProjectRoot>

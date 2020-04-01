@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Package IsComponentLib="True">
+  <Identity value="FontAwesome.066b7c6e13eb4981b99803c8b3a51aae" />
+  <Version value="0.1.0" />
+  <Items>
+    <ResourceItem ResourceName="font-awesome.min.css" LinkerAction="Css" OutputFileName="font-awesome.min.css" Src="font-awesome.min.css" />
+    <ResourceItem ResourceName="FontAwesome.otf" OutputFileName="FontAwesome.otf" Src="FontAwesome.otf" />
+    <ResourceItem ResourceName="fontawesome-webfont.eot" OutputFileName="fontawesome-webfont.eot" Src="fontawesome-webfont.eot" />
+    <ResourceItem ResourceName="fontawesome-webfont.svg" OutputFileName="fontawesome-webfont.svg" Src="fontawesome-webfont.svg" />
+    <ResourceItem ResourceName="fontawesome-webfont.ttf" OutputFileName="fontawesome-webfont.ttf" Src="fontawesome-webfont.ttf" />
+    <ResourceItem ResourceName="fontawesome-webfont.woff" OutputFileName="fontawesome-webfont.woff" Src="fontawesome-webfont.woff" />
+    <ResourceItem ResourceName="fontawesome-webfont.woff2" OutputFileName="fontawesome-webfont.woff2" Src="fontawesome-webfont.woff2" />
+  </Items>
+</Package>

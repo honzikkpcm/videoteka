@@ -22,5 +22,12 @@
         </AttributeType>
       </DeclaredType>
     </Attribute>
+    <Attribute>
+      <Name value="listState" />
+      <Caption value="List state" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
   </Children>
 </GlobalVariables>

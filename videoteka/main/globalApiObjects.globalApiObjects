@@ -9,9 +9,5 @@
       <listsUrl value="" />
       <rootUrl value="http://localhost:8080/" />
     </ServerConnection>
-    <ListCtrl identity="ListCtrl.459ff3780ab145df985191cfc1336ce1">
-      <Name value="listCtrl" />
-      <server reference="~videoteka" />
-    </ListCtrl>
   </ApiObjects>
 </GlobalApiObjects>

@@ -106,6 +106,97 @@
             </CssClassConditional>
           </CssClass>
         </ReferenceCombo>
+        <TextBox>
+          <Name value="textBox1" />
+          <CaptionPosition value="Top" />
+          <Panel.Height value="#" />
+          <Panel.Width value="150px" />
+          <Bindings>
+            <Binding SourceProperty="Data" Expression="declListQueryColumns" />
+            <Binding SourceProperty="IsRequiredMarkVisible" Expression="declListQueryColumns.isRequired()" />
+            <Binding SourceProperty="Caption" Expression="declListQueryColumns.caption()" />
+          </Bindings>
+          <CssClass>
+            <CssClassConditional>
+              <ClassName value="{theme}-textbox" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+          </CssClass>
+        </TextBox>
+        <Panel>
+          <Name value="panel4" />
+          <Orientation value="Horizontal" />
+          <Panel.Height value="#" />
+          <Panel.Width value="*" />
+          <Children>
+            <List identity="List.a6f439c3b8e944f383863f66ff1261c8">
+              <Name value="MoviesList" />
+              <controller reference="~listCtrl" />
+              <listName value="list" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Bindings>
+                <Binding SourceProperty="selectedRow" Expression="selectedRow" />
+              </Bindings>
+              <columns>
+                <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                  <Name value="clmnID" />
+                  <Caption value="ID" />
+                  <ColumnName value="id" />
+                  <DataType value="string" />
+                  <EnableFilter value="False" />
+                </listColumn>
+                <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                  <Name value="clmnName" />
+                  <Caption value="Name" />
+                  <ColumnName value="name" />
+                  <DataType value="string" />
+                  <FilterOperatorType value="substring" />
+                </listColumn>
+                <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                  <Name value="clmnType" />
+                  <Caption value="Type" />
+                  <ColumnName value="type" />
+                  <DataType value="string" />
+                  <filterOptions>
+                    <filterOption identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                      <text value="Movie" />
+                      <value value="movie" />
+                    </filterOption>
+                    <filterOption identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                      <text value="Series" />
+                      <value value="series" />
+                    </filterOption>
+                  </filterOptions>
+                </listColumn>
+                <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                  <Name value="clmnReleased" />
+                  <Caption value="Released" />
+                  <ColumnName value="yearOfRelease" />
+                  <DataType value="integer" />
+                </listColumn>
+                <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                  <Name value="clmnStarring" />
+                  <Caption value="Starring" />
+                  <ColumnName value="starring" />
+                  <DataType value="string" />
+                </listColumn>
+                <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                  <Name value="clmnRating" />
+                  <Caption value="Rating" />
+                  <ColumnName value="rating" />
+                  <DataType value="string" />
+                </listColumn>
+              </columns>
+            </List>
+          </Children>
+          <CssClass>
+            <CssClassConditional>
+              <ClassName value="{theme}-panel" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+          </CssClass>
+        </Panel>
         <Panel>
           <Name value="panel17" />
           <Orientation value="Horizontal" />
@@ -686,8 +777,6 @@
             <GroupBox>
               <Name value="groupBox1" />
               <Caption value="Add movie" />
-              <Panel.Height value="#" />
-              <Panel.Width value="100%" />
               <Content>
                 <Panel>
                   <Name value="panel3" />
@@ -1644,6 +1733,68 @@
             </Computed>
           </Children>
         </Reference>
+        <Reference>
+          <Name value="selectedRow" />
+          <Caption value="Selected row" />
+          <Children>
+            <Attribute>
+              <Name value="selectedId" />
+              <Caption value="Selected id" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="selectedName" />
+              <Caption value="Selected name" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="selectedType" />
+              <Caption value="Selected type" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="selectedActors" />
+              <Caption value="Selected actors" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="selectedGenres" />
+              <Caption value="Selected genres" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Reference>
+        <Attribute>
+          <Name value="declListQueryColumns" />
+          <Caption value="Decl list query columns" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="declListQueryFilter" />
+          <Caption value="Decl list query filter" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="resultColumn" />
+          <Caption value="Result column" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
       </Children>
     </DataContext>
   </DataContext>
@@ -1658,6 +1809,27 @@
 
 var response = apiobjects.videoteka.getAsync("list")
 
+form.declListQueryColumns = "id, name, type"
+form.resultColumn = "id"
+form.declListQueryFilter = "type eq 'movie'"
+
+var response2 = form.apiobjects.declListQuery1.getResultAsync(form.declListQueryColumns, form.declListQueryFilter)
+
+
+if globals.listState = defaultString() then
+	// set defaults
+	form.apiobjects.listCtrl.setSorting("name:desc")
+	form.apiobjects.listCtrl.focusFirstRecord()
+else
+	system.console("Loading serialized data")
+	form.apiobjects.listCtrl.loadState(globals.listState)
+	system.console("Loaded saved state::" + globals.listState)
+endif
+
+
+form.apiobjects.listCtrl.setReady(true)
+
+
 if (response.isError()) then
 	system.consoleError(response.getErrorMessage())
 	form.statusCode = ToString(response.getStatusCode())
@@ -1665,7 +1837,6 @@ else
 	
 	form.addMovie.addMovieCaption = "Add movie"
 	form.mList.fromJson(response.getJsonString())
-
 	form.apiobjects.list.fillFromJson(response.getJsonString())
 
 	form.statusCode = ToString(response.getJsonString())
@@ -1710,7 +1881,7 @@ navigation.main.detailFrm.go()]]></Script>
 
 	var addJson = newMovie.toJson()
 	system.console(ToString(addJson))
-	var response = apiobjects.videoteka.postAsync("http://localhost:8080/create", addJson)
+	var response = apiobjects.videoteka.postAsync("create", addJson)
 	
 	if (response.isError()) then
 		system.consoleError(response.getErrorMessage())
@@ -1737,7 +1908,7 @@ if form.addMovie.addMovieCaption = "Update movie" then
 		//newMovie.starring = form.addMovie.addStaring.toJson()	
 	var addJson = newMovie.toJson()
 	system.console(ToString(addJson))
-	var response = apiobjects.videoteka.postAsync("http://localhost:8080/update", addJson)
+	var response = apiobjects.videoteka.postAsync("update", addJson)
 	if (response.isError()) then
 		system.consoleError(response.getErrorMessage())
 		system.alert("Couldn't update record " + globals.selectedId + ", please try again later")
@@ -1767,7 +1938,7 @@ if (response.isError()) then
 else
 	form.addMovie.addMovieCaption = "Update movie"
 	form.addMovie.addName = replaceString(response.extractJson("name"), "\"", "")
-//	form.addMovie.addRelease = response.extractJson("yearOfRelease")
+	//form.addMovie.addRelease = response.extractJson("yearOfRelease")
 
 	if params.data.type = "series" then
 		form.seriesToggler.setTouched(true)
@@ -1871,5 +2042,14 @@ endif	]]></Script>
         </CodelistColumn>
       </columns>
     </Codelist>
+    <ListCtrl identity="ListCtrl.459ff3780ab145df985191cfc1336ce1">
+      <Name value="listCtrl" />
+      <server reference="+GlobalApiObjects.videoteka" />
+    </ListCtrl>
+    <DeclListQuery identity="DeclListQuery.f41d2c211a8f43618588763e63b56065">
+      <Name value="declListQuery1" />
+      <listName value="list" />
+      <server reference="+GlobalApiObjects.videoteka" />
+    </DeclListQuery>
   </ApiObjects>
 </Form>

@@ -9,5 +9,6 @@
     <PackageItem Src="detailFrm.form" />
     <PackageItem Src="globalVariables.globalVariables" />
     <ResourceItem ResourceName="style.css" LinkerAction="Css" OutputFileName="style.css" Src="style.css" />
+    <PackageItem Src="localizations.packageLocalizations" />
   </Items>
 </Package>
