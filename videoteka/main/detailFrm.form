@@ -613,7 +613,6 @@ if (response.isError()) then
 	form.statusCode = ToString(response.getStatusCode())
 else
 	form.mListDetail.fromJson(response.getJsonString())
-	
 	form.statusCode = ToString(response.getJsonString())
 	system.console(ToString(response.getJsonString()))
 

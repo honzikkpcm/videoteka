@@ -1,0 +1,17 @@
+﻿.ui-autocomplete {
+    line-height: 20px;
+}
+/*--eliminate jquery ui autocomplete unwanted horizontal scrollbar--*/
+.ui-state-active {
+    margin: 0 !important;
+}
+
+.m8-referencelookup input, .m8-taricLookup input {
+    font-size: 12px;
+    border: 1px solid #D9D9D9;
+    padding: 0.25em;
+}
+
+.m8-referencelookup .required input, .m8-taricLookup .required input {
+    border-left: 3px solid #70E01B;
+}

@@ -5,6 +5,9 @@
   <ApiObjects>
     <ServerConnection identity="ServerConnection.db7b3eef075548988df768923691922c">
       <Name value="videoteka" />
+      <codelistsUrl value="" />
+      <listsUrl value="" />
+      <rootUrl value="http://localhost:8080/" />
     </ServerConnection>
     <ListCtrl identity="ListCtrl.459ff3780ab145df985191cfc1336ce1">
       <Name value="listCtrl" />

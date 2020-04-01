@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<ComponentManifest>
+  <Name value="TaricLookup" />
+  <Generator value="taricLookupGenerator.js" />
+  <Type value="Editor" />
+  <UiCategory value="SFFW" />
+  <UiIcon value="TaricLookup.png" />
+  <Properties>
+    <PropertyManifest>
+      <Name value="Data" />
+      <Bindable value="True" />
+      <IsRequired value="True" />
+      <Type value="ScreenFactory.Data.Model.DataStructures.DataReferenceAttribute" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="DataApiObject" />
+      <Bindable value="True" />
+      <IsRequired value="True" />
+      <Type value="ApiObject" />
+      <UiEditor value="contract/IReferenceList" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="MinChars" />
+      <Default value="4" />
+      <Type value="integer" />
+      <UiCaption value="Minimum characters" />
+      <UiCategory value="Behaviour" />
+      <UiDescription value="Minimum characters before dropdown is shown. Do not set less than 4 if not necessary." />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="DisplayMember" />
+      <Type value="string" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="PanelClass" />
+      <Default value="contentPanel" />
+      <Type value="string" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="IsEnabled" />
+      <Bindable value="True" />
+      <Default value="True" />
+      <Type value="bool" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="expectLinebreaksInValues" />
+      <Default value="true" />
+      <Type value="bool" />
+      <UiCategory value="Behaviour" />
+      <UiDescription value="Should be set to true only if item descriptions could contain line breaks or tabs, otherwise set to false due to better server performance" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="enabledMember" />
+      <Bindable value="OneWay" />
+      <Type value="string" />
+      <UiDescription value="Name of codelist attribute that holds boolean value indication if item is enabled for selection or not." />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="staticODataFilter" />
+      <Bindable value="OneWay" />
+      <Type value="string" />
+      <UiCaption value="Static OData filter" />
+    </PropertyManifest>
+  </Properties>
+</ComponentManifest>

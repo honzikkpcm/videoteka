@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<PackageLocalizations>
+  <Name value="localizations" />
+  <Strings>
+    <LocalizedString LocID="noResultsFound">
+      <Values>
+        <LocaleValue Lang="en" Value="No results found." />
+        <LocaleValue Lang="cs" Value="Nebyly nalezeny žádné výsledky." />
+        <LocaleValue Lang="fi" Value="Tuloksia ei löytynyt." />
+        <LocaleValue Lang="sv" Value="Inga resultat hittades." />
+        <LocaleValue Lang="sr" Value="Nije pronađen nijedan rezultat." />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="numberOfFoundItems">
+      <Values>
+        <LocaleValue Lang="en" Value="Number of found items:" />
+        <LocaleValue Lang="cs" Value="Počet nalezených položek:" />
+        <LocaleValue Lang="fi" Value="Löydetyt kohteet:" />
+        <LocaleValue Lang="sv" Value="Antal hittade artiklar:" />
+        <LocaleValue Lang="sr" Value="Broj pronađenih stavki:" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="chooseOptionText">
+      <Values>
+        <LocaleValue Lang="en" Value="Choose from suggested options below." />
+        <LocaleValue Lang="cs" Value="Zvolte některou z navržených možností níže." />
+        <LocaleValue Lang="fi" Value="Valitse alla olevista ehdotetuista vaihto ehdoista." />
+        <LocaleValue Lang="sv" Value="Välj bland föreslagna alternativ nedan." />
+        <LocaleValue Lang="sr" Value="Odaberite između predloženih opcija ispod." />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="selected">
+      <Values>
+        <LocaleValue Lang="en" Value="was selected" />
+        <LocaleValue Lang="cs" Value="byl vybrán" />
+        <LocaleValue Lang="fi" Value="valittiin" />
+        <LocaleValue Lang="sv" Value="valdes" />
+        <LocaleValue Lang="sr" Value="je izabran" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="tabSelectsTheFirstOption">
+      <Values>
+        <LocaleValue Lang="en" Value="TAB key selects the first option." />
+        <LocaleValue Lang="cs" Value="Klávesa TAB vybere první možnost." />
+        <LocaleValue Lang="fi" Value="TAB-näppäin valitsee ensimmäisen vaihto ehdon." />
+        <LocaleValue Lang="sv" Value="TAB-tangenten väljer det första alternativet." />
+        <LocaleValue Lang="sr" Value="Taster TAB bira prvu opciju." />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="disabled">
+      <Values>
+        <LocaleValue Lang="en" Value="disabled" />
+        <LocaleValue Lang="cs" Value="zakázán" />
+        <LocaleValue Lang="fi" Value="poistettu käytöstä" />
+        <LocaleValue Lang="sv" Value="inaktiverad" />
+        <LocaleValue Lang="sr" Value="onemogućen" />
+      </Values>
+    </LocalizedString>
+  </Strings>
+</PackageLocalizations>
