@@ -11,13 +11,45 @@
 .no-header th{
 	display:none !important;
 }
+.no-padding tr, .no-padding td{
+	padding: 0 !important;
+}
+.border-bottom tr{
+	border-bottom: 1px #cdcdcd solid;
+}
+.border-bottom tr:last-child{
+	border-bottom: 0;
+}
 .white-bg-sticky{
 	left: 0;
 }
 .white-bg-sticky .container{
-	background: #fff !important;
+	background: #f2f2f2 !important;
 }
-
+.overflow-scroll{
+	overflow: scroll;
+}
+.overflow-scroll-y{
+	overflow-y: auto;
+}
+.addPanelsHolder .groupbox{
+	//width: 50% !important;
+}
+.fl-right, .fl-right .panel-cell{
+	float:right;
+}
+.addPanelsHolder .groupbox.seriesToggler{
+	//width: 33% !important;
+}
+.mh200{
+	max-height: 200px;
+}
+.shadow-top{
+	box-shadow: 0 -5px 5px -5px #333;
+}
+.shadow-top > ul{
+	width: 100% !important;
+}
 /* CUSTOM SETTINGS FOR CLASSES */
 .inline-table tr{
 	background-color: transparent !important;

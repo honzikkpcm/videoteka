@@ -78,5 +78,13 @@
       <ReferencedIdentity value="DeclListQuery.f41d2c211a8f43618588763e63b56065" />
       <ReferencedVersion value="1.0.3" />
     </PackageReference>
+    <PackageReference Alias="FileReader" IsComponentLib="True" Origin="FileReader\FileReader.package">
+      <ReferencedIdentity value="FileReader.f457f0445b7e44b7a3a1134647eff385" />
+      <ReferencedVersion value="1.1.1" />
+    </PackageReference>
+    <PackageReference Alias="busyIndicator" IsComponentLib="True" Origin="BusyIndicator\BusyIndicator.package">
+      <ReferencedIdentity value="busyIndicator.4a8ce8836eb04d7bbc155c7119f0193e" />
+      <ReferencedVersion value="2.0.1" />
+    </PackageReference>
   </PackageReferences>
 </ProjectRoot>

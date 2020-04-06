@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<ComponentManifest>
+  <Name value="FileReader" />
+  <Generator value="fileReaderGenerator.js" />
+  <Type value="Editor" />
+  <UiCategory value="SFFW" />
+  <UiIcon value="fileReader.png" />
+  <Events>
+    <EventManifest>
+      <Name value="OnChange" />
+      <Parameters>
+        <EventParameterManifest>
+          <Name value="data" />
+        </EventParameterManifest>
+      </Parameters>
+    </EventManifest>
+  </Events>
+  <Properties>
+    <PropertyManifest>
+      <Name value="FileContent" />
+      <Bindable value="Always" />
+      <IsRequired value="True" />
+      <Type value="string" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="Filter" />
+      <Bindable value="True" />
+      <Type value="string" />
+      <UiDescription value="FIle extension starting with dot or MIME type (see HTML input Accept attribute)" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="FileName" />
+      <Bindable value="Always" />
+      <Type value="string" />
+    </PropertyManifest>
+    <PropertyManifest>
+      <Name value="FileType" />
+      <Bindable value="Always" />
+      <Type value="string" />
+    </PropertyManifest>
+  </Properties>
+</ComponentManifest>

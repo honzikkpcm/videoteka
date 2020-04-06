@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Package IsComponentLib="True">
+  <Identity value="FileReader.f457f0445b7e44b7a3a1134647eff385" />
+  <Version value="1.1.1" />
+  <Items>
+    <ResourceItem ResourceName="fileReader.js" LinkerAction="Script" OutputFileName="fileReader.js" Src="fileReader.js" />
+    <PackageItem Src="FileReader.componentManifest" />
+    <ResourceItem ResourceName="fileReaderGenerator.js" Action="None" OutputFileName="fileReaderGenerator.js" Src="fileReaderGenerator.js" />
+    <ResourceItem ResourceName="fileReader.png" Action="None" OutputFileName="fileReader.png" Src="fileReader.png" />
+  </Items>
+</Package>
